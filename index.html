@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenz Healthcare Clinics</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(0,0,50,0.7), rgba(0,0,50,0.7)), url('logo.png') no-repeat center center fixed;
+            background-size: 50%;
+            color: white;
+        }
+        header {
+            background-color: #004aad;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            height: 80px;
+        }
+        h1 {
+            margin: 10px 0 0 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        section {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, select, textarea {
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Wenz Healthcare Logo">
+        <h1>Wenz Healthcare Clinics</h1>
+        <p>Your trusted online clinic</p>
+    </header>
+    <main>
+        <section>
+            <h2>Book Your Appointment</h2>
+            <form action="https://script.google.com/macros/s/AKfycbwAqu0HVgW7S-sNhAuPd9kwOmjc61WEclTSytnwhFdOTkO-rAZOdJ-q3ri1g_pwxW7X/exec" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                <label for="appointment">Choose a time (Mon-Fri, 12PM-6PM IST):</label>
+                <input type="datetime-local" name="appointment" required>
+                <textarea name="message" placeholder="Additional Information"></textarea>
+                <p><small>Note: Booking will be confirmed by us via WhatsApp.</small></p>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
